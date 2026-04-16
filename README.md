@@ -47,24 +47,24 @@ Defines two players:
 - Player1
 - Player2
 
-# Grid Definition
+## Grid Definition
 Uses a 10×10 grid
 Coordinates are formally defined through GridX, GridY, and Grid
 
-# Ship Types
+## Ship Types
 The system models three ship types:
 - Submarine → size 1
 - Destroyer → size 2
 - Cruiser → size 3
 
-# Game States
+## Game States
 The game progresses through formally defined states:
 - SettingUp
 - Playing
 - Player1_Wins
 - Player2_Wins
 
-# Deployment Rules
+## Deployment Rules
 The specification includes deployment operations that enforce:
 - Ship placement only during setup
 - Correct player turn during setup
