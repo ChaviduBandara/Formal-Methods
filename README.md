@@ -33,43 +33,42 @@ Battleships/
 └── Battleships_Globals.mch    # Shared global definitions
 ```
 
-Project Overview
+## Project Overview
 
 This project is a formal specification of the classic Battleships game written in the B-Method.
 It focuses on defining the system behavior mathematically rather than building a graphical interface or a playable application.
 
 The model captures important game rules such as player turns, ship placement, valid grid boundaries, non-overlapping ships, and state transitions. It is useful for understanding how formal methods can be used to specify and verify the correctness of a software system.
 
-Core Functionalities
-Player Modeling
+## Core Functionalities
+
+# Player Modeling
 Defines two players:
-Player1
-Player2
-Grid Definition
+- Player1
+- Player2
+
+# Grid Definition
 Uses a 10×10 grid
 Coordinates are formally defined through GridX, GridY, and Grid
-Ship Types
 
+# Ship Types
 The system models three ship types:
+- Submarine → size 1
+- Destroyer → size 2
+- Cruiser → size 3
 
-Submarine → size 1
-Destroyer → size 2
-Cruiser → size 3
-Game States
-
+# Game States
 The game progresses through formally defined states:
+- SettingUp
+- Playing
+- Player1_Wins
+- Player2_Wins
 
-SettingUp
-Playing
-Player1_Wins
-Player2_Wins
-Deployment Rules
-
+# Deployment Rules
 The specification includes deployment operations that enforce:
-
-Ship placement only during setup
-Correct player turn during setup
-No duplicate deployment of the same ship
-No overlap with already occupied positions
-No out-of-bounds placement
-Setup-order requirements before deploying larger ships
+- Ship placement only during setup
+- Correct player turn during setup
+- No duplicate deployment of the same ship
+- No overlap with already occupied positions
+- No out-of-bounds placement
+- Setup-order requirements before deploying larger ships
